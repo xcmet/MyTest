@@ -1,0 +1,264 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F5;
+  color: #2E3A59;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2E3A59;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #C9A86A;
+  font-weight: bold;
+}
+
+.logo-subtext {
+  display: block;
+  font-size: 0.7em;
+  font-style: italic;
+  color: #555;
+  margin-top: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #C9A86A;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #2E3A59;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #C9A86A;
+  color: #F5F5F5;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Expertise Section */
+.expertise {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.expertise a {
+  color: inherit;         /* Use the surrounding text color */
+  text-decoration: none;  /* Remove underline */
+  font-weight: normal;    /* Not bold */
+  font-family: inherit;   /* Use the page font */
+  cursor: pointer;        /* Show pointer on hover */
+}
+
+.expertise h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.expertise ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expertise li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.expertise li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #C9A86A;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .expertise {
+    padding: 2rem 1rem;
+  }
+}
+.site-footer {
+  background-color: #2E3A59; /* Dark background */
+  color: #F5F5F5;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav li a {
+  color: #F5F5F5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #C9A86A; /* Gold accent on hover */
+}
+.contact-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #2E3A59;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #2E3A59;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #2E3A59;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #C9A86A;
+  box-shadow: 0 0 0 2px rgba(201, 168, 106, 0.2);
+}
+.email-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0078D4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #005EA2;
+}
+
+.fallback-text {
+  margin-top: 16px;
+  font-size: 0.95em;
+  color: #555;
+}
+.services {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.service ul {
+  padding-left: 20px;
+}
+
+.service ul li {
+  margin-bottom: 6px;
+}
